@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/h2"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="7dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/w2"
+        android:layout_marginTop="@dimen/w2"
+        android:layout_marginEnd="@dimen/w2"
+        android:layout_marginBottom="@dimen/w2">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_image"
+            android:layout_width="@dimen/w16"
+            android:layout_height="@dimen/h16"
+            android:scaleType="centerInside"
+            android:src="@drawable/error"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_error_title"
+            style="@style/TextView.Headline9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/w4"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/home_error_problem_title"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_error_description"
+            style="@style/TextView.Text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/w4"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="@string/home_error_problem_description"
+            app:layout_constraintStart_toEndOf="@id/iv_image"
+            app:layout_constraintTop_toBottomOf="@id/tv_error_title"
+            tools:text="Description" />
+
+
+        <Button
+            android:id="@+id/btn_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/w4"
+            android:layout_weight="1"
+            android:text="@string/home_error_problem_action_title"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_image"
+            app:layout_constraintTop_toBottomOf="@id/tv_error_description" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

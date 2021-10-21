@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="colorControlNormal">@color/grey_4</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:elevation">0dp</item>
+        <item name="elevation">0dp</item>
+
+    </style>
+
+
+    <!-- *************** -->
+    <!-- Toolbar Bar Style -->
+    <!-- *************** -->
+
+    <style name="MyTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyTheme.ActionBarStyle</item>
+    </style>
+
+    <style name="MyTheme.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:titleTextColor">@color/red</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/_24ssp</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+    </style>
+
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="NavigationTheme" parent="AppTheme">
+        <item name="listPreferredItemHeightSmall">50dp</item>
+
+    </style>
+
+    <!-- *************** -->
+    <!-- Activity Themes Styles -->
+    <!-- *************** -->
+    <style name="AppTheme.SplashActivity" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="AppTheme.HomeActivity" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="AppTheme.White" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="AppTheme.Transparent" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@color/blue_1</item>
+    </style>
+
+    <style name="ScrollbarRecyclerView" parent="android:Widget">
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:scrollbarSize">@dimen/scrollbar_width</item>
+    </style>
+
+    <style name="ScrollbarRecyclerView.White">
+        <item name="android:scrollbarThumbVertical">@android:color/white</item>
+    </style>
+
+
+    <!-- *************** -->
+    <!-- TextView Styles -->
+    <!-- *************** -->
+
+    <style name="TextView" parent="android:style/Widget.TextView" />
+
+    <style name="TextView.Regular" parent="android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextView.Light" parent="android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextView.Medium" parent="android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextView.Black" parent="android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="TextView.Regular.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.Regular.Bold.28">
+        <item name="android:textSize">@dimen/_28ssp</item>
+    </style>
+
+    <style name="TextView.Regular.Bold.28.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextView.Regular.Bold.28.Grey">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="TextView.Regular.Bold.28.GreyDark">
+        <item name="android:textColor">@color/grey_6</item>
+    </style>
+
+    <style name="TextView.Regular.Bold.26">
+        <item name="android:textSize">@dimen/_26ssp</item>
+    </style>
+
+    <style name="TextView.Regular.Bold.26.GreyDark">
+        <item name="android:textColor">@color/grey_6</item>
+    </style>
+
+    <style name="TextView.Regular.20">
+        <item name="android:textSize">@dimen/_20ssp</item>
+    </style>
+
+    <style name="TextView.Regular.20.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="TextView.Regular.Bold.18">
+        <item name="android:textSize">@dimen/_18ssp</item>
+    </style>
+
+    <style name="TextView.Regular.Bold.18.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextView.Regular.Bold.18.Grey">
+        <item name="android:textColor">@color/grey_1</item>
+    </style>
+
+    <style name="TextView.Regular.Bold.18.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextView.Regular.Bold.16">
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
+
+    <style name="TextView.Regular.Bold.12">
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="TextView.Regular.Bold.12.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextView.Regular.Bold.16.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextView.Regular.16">
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
+
+    <style name="TextView.Regular.16.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextView.Regular.16.Grey">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="TextView.Regular.16.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextView.Regular.18">
+        <item name="android:textSize">@dimen/_18ssp</item>
+    </style>
+
+    <style name="TextView.Regular.18.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextView.Regular.18.Grey">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="TextView.Regular.14">
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>
+
+    <style name="TextView.Regular.14.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextView.Regular.14.Red">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="TextView.Regular.14.Grey">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="TextView.Regular.12">
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="TextView.Regular.12.GreyDark">
+        <item name="android:textColor">@color/grey_6</item>
+    </style>
+
+    <style name="TextView.Regular.12.Grey">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="TextView.Regular.10">
+        <item name="android:textSize">@dimen/_10ssp</item>
+    </style>
+
+    <style name="TextView.Regular.10.GreyDark">
+        <item name="android:textColor">@color/grey_6</item>
+    </style>
+
+    <style name="TextView.Light.12">
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="TextView.Light.12.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextView.Medium.12">
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="TextView.Medium.14">
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>
+
+
+    <style name="TextView.Medium.14.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextView.Medium.20">
+        <item name="android:textSize">@dimen/_20ssp</item>
+    </style>
+
+
+    <style name="TextView.Medium.20.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextView.Medium.18">
+        <item name="android:textSize">@dimen/_18ssp</item>
+    </style>
+
+
+    <style name="TextView.Medium.18.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextView.Black.24">
+        <item name="android:textSize">@dimen/_24ssp</item>
+    </style>
+
+    <style name="TextView.Black.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.Black.Bold.28">
+        <item name="android:textSize">@dimen/_28ssp</item>
+    </style>
+
+    <style name="TextView.Black.Bold.28.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Semantic Styles -->
+    <style name="TextView.Logo1" parent="TextView.Black.Bold.28.Black" />
+
+    <style name="TextView.Headline1" parent="TextView.Regular.Bold.28.Black" />
+
+    <style name="TextView.Headline2" parent="TextView.Regular.Bold.28.Grey" />
+
+    <style name="TextView.Headline7" parent="TextView.Regular.Bold.26.GreyDark" />
+
+    <style name="TextView.Headline9" parent="TextView.Regular.Bold.16.Black" />
+
+    <style name="TextView.Headline10" parent="TextView.Regular.Bold.12.Black" />
+
+    <style name="TextView.Headline4" parent="TextView.Regular.20.Black" />
+
+    <style name="TextView.Text1" parent="TextView.Regular.18.Black" />
+
+    <style name="TextView.Text2" parent="TextView.Regular.14.Grey" />
+
+    <style name="TextView.Text3" parent="TextView.Regular.14.Black" />
+
+    <style name="TextView.Text3.Error" parent="TextView.Regular.14.Red" />
+
+    <style name="TextView.Text10" parent="TextView.Regular.10.GreyDark" />
+
+    <style name="TextView.Text4" parent="TextView.Regular.Bold.18.White" />
+
+    <style name="TextView.Text5" parent="TextView.Regular.18.Grey" />
+
+    <style name="TextView.ButtonLabel" parent="TextView.Regular.16.White" />
+
+    <style name="TextView.Text6" parent="TextView.Light.12.Black" />
+
+    <style name="TextView.ButtonLabel1" parent="TextView.Medium.14.White" />
+
+    <style name="TextView.Text9" parent="TextView.Medium.18.Black" />
+
+    <style name="TextView.Text11" parent="TextView.Regular.12.Grey" />
+
+
+</resources>

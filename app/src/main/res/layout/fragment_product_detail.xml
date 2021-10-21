@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="product"
+            type="com.wtmcodex.cazoo.core.data.model.CazooProductModel" />
+    </data>
+
+    <ScrollView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/h6">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/w2"
+            android:layout_marginTop="@dimen/w2"
+            android:layout_marginEnd="@dimen/w2"
+            android:layout_marginBottom="@dimen/w2">
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_image"
+                android:layout_width="@dimen/w16"
+                android:layout_height="@dimen/h16"
+                android:scaleType="centerInside"
+                android:src="@drawable/placeholder"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:riv_border_color="@color/grey"
+                app:riv_border_width="1dip" />
+
+
+            <LinearLayout
+                android:id="@+id/layout_top"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/w4"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:weightSum="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_image"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/TextView.Headline9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@{product.name}"
+                    tools:text="ATM" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    style="@style/TextView.Text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    tools:text="Price" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_rating"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/w4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_image"
+                app:layout_constraintTop_toBottomOf="@id/layout_top">
+
+                <RatingBar
+                    android:id="@+id/rb_product"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:stepSize="0.5"
+                    android:theme="@style/Widget.AppCompat.RatingBar" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    style="@style/TextView.Text2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:text="@{product.releaseDate}"
+                    tools:text="Date" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_description"
+                style="@style/TextView.Text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/h2"
+                android:text="@{product.description}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_image"
+                tools:text="Description" />
+
+            <Button
+                android:id="@+id/btn_bookmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/h2"
+                android:layout_weight="1"
+                android:text="@string/home_error_problem_action_title"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_description" />
+
+            <TextView
+                android:id="@+id/label_description"
+                style="@style/TextView.Text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/h2"
+                android:text="@string/product_detail_description"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_bookmark" />
+
+            <TextView
+                android:id="@+id/tv_long_description"
+                style="@style/TextView.Text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/h2"
+                android:text="@{product.longDescription}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/label_description" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>

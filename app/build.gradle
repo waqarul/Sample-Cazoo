@@ -1,0 +1,210 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.wtmcodex.cazoo"
+        minSdk 23
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        coreLibraryDesugaringEnabled true
+
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions.freeCompilerArgs += ["-Xuse-experimental=kotlin.ExperimentalUnsignedTypes"]
+    }
+
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
+
+    // Specifies two flavor dimensions.
+    flavorDimensions "default"
+
+    productFlavors {
+        development {
+            dimension 'default'
+            applicationIdSuffix ".development"
+            resValue "string", "app_name", "Sample Cazoo Development"
+            resValue "string", "base_url", "http://app.check24.de/"
+        }
+        staging {
+            dimension 'default'
+            applicationIdSuffix ".staging"
+            resValue "string", "app_name", "Sample Cazoo Staging"
+            resValue "string", "base_url", "http://app.check24.de/"
+        }
+        production {
+            dimension 'default'
+            resValue "string", "app_name", "Sample Cazoo"
+            resValue "string", "base_url", "http://app.check24.de/"
+        }
+    }
+
+    sourceSets {
+        test {
+            java.srcDirs += "src/sharedTest/java"
+        }
+        androidTest {
+            java.srcDirs += "src/sharedTest/java"
+        }
+    }
+}
+
+dependencies {
+    def app_compat_version = "1.3.1"
+    def material_version = "1.4.0"
+    def constraint_layout_version = "2.1.1"
+    def junit_version = "2.1.0"
+    def espresso_version = "2.1.0"
+    def room_version = "2.3.0"
+    def retrofit_version = "2.9.0"
+    def okhttp_version = "4.9.0"
+    def gson_version = "2.8.6"
+    def coroutines_version = "1.5.1"
+    def lifecycle_extensions_version = "2.2.0"
+    def lifecycle_version = "2.4.0-rc01"
+    def dagger_version = "2.38.1"
+    def navigation_version = "2.3.5"
+    def swipe_refresh_layout_version = "1.1.0"
+    def sdp_version = "1.0.6"
+    def arch_core_testing_version = "2.1.0"
+    def robo_electric_version = "4.5.1"
+    def mockito_version = "3.3.1"
+    def hamcrest_version = "1.3"
+    def test_rules_version = "1.4.0"
+    def core_ktx_test = "1.4.0"
+    def coroutine_version = "1.5.1"
+    def androidx_test_version = "1.4.0"
+    def rounded_image_version = "2.3.0"
+    def glide_version = "4.12.0"
+
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.1.5'
+
+    implementation "androidx.appcompat:appcompat:$app_compat_version"
+    implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation "androidx.test.ext:junit:$junit_version"
+
+    // Material Design
+    implementation "com.google.android.material:material:$material_version"
+
+    // Room
+    kapt "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+    //  implementation "androidx.room:room-rxjava3:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+
+    // JSON
+    implementation "com.google.code.gson:gson:$gson_version"
+
+    // OKHttp Logging Interceptor
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
+
+    // Kotlin Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+
+    // AndroidX
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_extensions_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+
+    // Dagger
+    implementation "com.google.dagger:dagger:$dagger_version"
+    implementation "com.google.dagger:dagger-android:$dagger_version"
+    implementation "com.google.dagger:dagger-android-support:$dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+    kapt "com.google.dagger:dagger-android-processor:$dagger_version"
+
+    // Navigation Components
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigation_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigation_version"
+
+    // Swipe Refresh Layout
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:$swipe_refresh_layout_version"
+
+    // Dimensions
+    implementation "com.intuit.sdp:sdp-android:$sdp_version"
+    implementation "com.intuit.ssp:ssp-android:$sdp_version"
+
+    // Rounded ImageView
+    implementation "com.makeramen:roundedimageview:$rounded_image_version"
+
+    // Glide
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    kapt "com.github.bumptech.glide:compiler:$glide_version"
+
+    // JVM testing
+    testImplementation "androidx.arch.core:core-testing:$arch_core_testing_version"
+    testImplementation "org.robolectric:robolectric:$robo_electric_version"
+    testImplementation "org.hamcrest:hamcrest-all:$hamcrest_version"
+    testImplementation "org.mockito:mockito-core:$mockito_version"
+    testImplementation "androidx.test:core-ktx:$core_ktx_test"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutine_version"
+
+    // Instrumented testing
+    androidTestImplementation "org.mockito:mockito-core:$mockito_version"
+    androidTestImplementation "androidx.test.espresso:espresso-contrib:$espresso_version"
+    androidTestImplementation "androidx.test.espresso:espresso-intents:$espresso_version"
+    androidTestImplementation "androidx.arch.core:core-testing:$arch_core_testing_version"
+    androidTestImplementation "androidx.test:rules:$test_rules_version"
+    androidTestImplementation "org.robolectric:annotations:$test_rules_version"
+    androidTestImplementation "androidx.test:core-ktx:$core_ktx_test"
+    androidTestImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutine_version"
+
+    // AndroidJUnitRunner and JUnit Rules
+    androidTestImplementation "androidx.test:core:$androidx_test_version"
+    androidTestImplementation "androidx.test:runner:$androidx_test_version"
+    androidTestImplementation "androidx.test.ext.junit.runners:$androidx_test_version"
+
+    // Assertions
+    androidTestImplementation "androidx.test.ext:truth:$androidx_test_version"
+    androidTestImplementation 'com.google.truth:truth:1.0.1'
+
+    // Espresso dependencies
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+    androidTestImplementation "androidx.test.espresso:espresso-accessibility:3.4.0"
+    androidTestImplementation "androidx.test.espresso:espresso-web:$espresso_version"
+    androidTestImplementation "androidx.test.espresso.idling:idling-concurrent:$espresso_version"
+
+    // The following Espresso dependency can be either "implementation"
+    // or "androidTestImplementation", depending on whether you want the
+    // dependency to appear on your APK's compile classpath or the test APK
+    // classpath.
+    androidTestImplementation "androidx.test.espresso:espresso-idling-resource:$espresso_version"
+
+}

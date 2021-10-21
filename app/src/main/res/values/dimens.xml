@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="design_navigation_separator_vertical_padding" tools:override="true">10dp</dimen>
+
+    <dimen name="scrollbar_width">4dp</dimen>
+    <dimen name="activity_horizontal_margin">@dimen/h4</dimen>
+    <dimen name="activity_vertical_margin">@dimen/h4</dimen>
+    <dimen name="nav_header_vertical_spacing">@dimen/h2</dimen>
+    <dimen name="nav_header_height">@dimen/h42</dimen>
+
+    <!--all entries in this file should be multiples of 4-->
+    <!--height-->
+    <dimen name="h1">@dimen/_4sdp</dimen>
+    <dimen name="h2">@dimen/_8sdp</dimen>
+    <dimen name="h3">@dimen/_12sdp</dimen>
+    <dimen name="h4">@dimen/_16sdp</dimen>
+    <dimen name="h5">@dimen/_20sdp</dimen>
+    <dimen name="h6">@dimen/_24sdp</dimen>
+    <dimen name="h7">@dimen/_28sdp</dimen>
+    <dimen name="h8">@dimen/_32sdp</dimen>
+    <dimen name="h9">@dimen/_36sdp</dimen>
+    <dimen name="h10">@dimen/_40sdp</dimen>
+    <dimen name="h11">@dimen/_44sdp</dimen>
+    <dimen name="h12">@dimen/_48sdp</dimen>
+    <dimen name="h13">@dimen/_52sdp</dimen>
+    <dimen name="h14">@dimen/_56sdp</dimen>
+    <dimen name="h15">@dimen/_60sdp</dimen>
+    <dimen name="h16">@dimen/_64sdp</dimen>
+    <dimen name="h17">@dimen/_68sdp</dimen>
+    <dimen name="h18">@dimen/_72sdp</dimen>
+    <dimen name="h19">@dimen/_76sdp</dimen>
+    <dimen name="h20">@dimen/_80sdp</dimen>
+    <dimen name="h21">@dimen/_84sdp</dimen>
+    <dimen name="h22">@dimen/_88sdp</dimen>
+    <dimen name="h23">@dimen/_92sdp</dimen>
+    <dimen name="h24">@dimen/_96sdp</dimen>
+    <dimen name="h25">@dimen/_100sdp</dimen>
+    <dimen name="h26">@dimen/_104sdp</dimen>
+    <dimen name="h27">@dimen/_108sdp</dimen>
+    <dimen name="h28">@dimen/_112sdp</dimen>
+    <dimen name="h29">@dimen/_116sdp</dimen>
+    <dimen name="h30">@dimen/_120sdp</dimen>
+    <dimen name="h31">@dimen/_124sdp</dimen>
+    <dimen name="h32">@dimen/_128sdp</dimen>
+    <dimen name="h33">@dimen/_132sdp</dimen>
+    <dimen name="h34">@dimen/_136sdp</dimen>
+    <dimen name="h35">@dimen/_140sdp</dimen>
+    <dimen name="h36">@dimen/_144sdp</dimen>
+    <dimen name="h37">@dimen/_148sdp</dimen>
+    <dimen name="h38">@dimen/_152sdp</dimen>
+    <dimen name="h39">@dimen/_156sdp</dimen>
+    <dimen name="h40">@dimen/_160sdp</dimen>
+    <dimen name="h41">@dimen/_164sdp</dimen>
+    <dimen name="h42">@dimen/_168sdp</dimen>
+    <dimen name="h43">@dimen/_172sdp</dimen>
+    <dimen name="h44">@dimen/_176sdp</dimen>
+    <dimen name="h45">@dimen/_180sdp</dimen>
+    <dimen name="h46">@dimen/_184sdp</dimen>
+    <dimen name="h47">@dimen/_188sdp</dimen>
+    <dimen name="h48">@dimen/_192sdp</dimen>
+    <dimen name="h49">@dimen/_196sdp</dimen>
+    <dimen name="h50">@dimen/_200sdp</dimen>
+    <!--width-->
+    <dimen name="w1">@dimen/_4sdp</dimen>
+    <dimen name="w2">@dimen/_8sdp</dimen>
+    <dimen name="w3">@dimen/_12sdp</dimen>
+    <dimen name="w4">@dimen/_16sdp</dimen>
+    <dimen name="w5">@dimen/_20sdp</dimen>
+    <dimen name="w6">@dimen/_24sdp</dimen>
+    <dimen name="w7">@dimen/_28sdp</dimen>
+    <dimen name="w8">@dimen/_32sdp</dimen>
+    <dimen name="w9">@dimen/_36sdp</dimen>
+    <dimen name="w10">@dimen/_40sdp</dimen>
+    <dimen name="w11">@dimen/_44sdp</dimen>
+    <dimen name="w12">@dimen/_48sdp</dimen>
+    <dimen name="w13">@dimen/_52sdp</dimen>
+    <dimen name="w14">@dimen/_56sdp</dimen>
+    <dimen name="w15">@dimen/_60sdp</dimen>
+    <dimen name="w16">@dimen/_64sdp</dimen>
+    <dimen name="w17">@dimen/_68sdp</dimen>
+    <dimen name="w18">@dimen/_72sdp</dimen>
+    <dimen name="w19">@dimen/_76sdp</dimen>
+    <dimen name="w20">@dimen/_80sdp</dimen>
+    <dimen name="w21">@dimen/_84sdp</dimen>
+    <dimen name="w22">@dimen/_88sdp</dimen>
+    <dimen name="w23">@dimen/_92sdp</dimen>
+    <dimen name="w24">@dimen/_96sdp</dimen>
+    <dimen name="w25">@dimen/_100sdp</dimen>
+    <dimen name="w26">@dimen/_104sdp</dimen>
+    <dimen name="w27">@dimen/_108sdp</dimen>
+    <dimen name="w28">@dimen/_112sdp</dimen>
+    <dimen name="w29">@dimen/_116sdp</dimen>
+    <dimen name="w30">@dimen/_120sdp</dimen>
+    <dimen name="w31">@dimen/_124sdp</dimen>
+    <dimen name="w32">@dimen/_128sdp</dimen>
+    <dimen name="w33">@dimen/_132sdp</dimen>
+    <dimen name="w34">@dimen/_136sdp</dimen>
+    <dimen name="w35">@dimen/_140sdp</dimen>
+    <dimen name="w36">@dimen/_144sdp</dimen>
+    <dimen name="w37">@dimen/_148sdp</dimen>
+    <dimen name="w38">@dimen/_152sdp</dimen>
+    <dimen name="w39">@dimen/_156sdp</dimen>
+    <dimen name="w40">@dimen/_160sdp</dimen>
+    <dimen name="w41">@dimen/_164sdp</dimen>
+    <dimen name="w42">@dimen/_168sdp</dimen>
+    <dimen name="w43">@dimen/_172sdp</dimen>
+    <dimen name="w44">@dimen/_176sdp</dimen>
+    <dimen name="w45">@dimen/_180sdp</dimen>
+    <dimen name="w46">@dimen/_184sdp</dimen>
+    <dimen name="w47">@dimen/_188sdp</dimen>
+    <dimen name="w48">@dimen/_192sdp</dimen>
+    <dimen name="w49">@dimen/_196sdp</dimen>
+    <dimen name="w50">@dimen/_200sdp</dimen>
+    <dimen name="w51">@dimen/_204sdp</dimen>
+    <dimen name="w52">@dimen/_208sdp</dimen>
+    <dimen name="w53">@dimen/_212sdp</dimen>
+    <dimen name="w54">@dimen/_216sdp</dimen>
+    <dimen name="w55">@dimen/_220sdp</dimen>
+    <dimen name="w56">@dimen/_224sdp</dimen>
+    <dimen name="w57">@dimen/_228sdp</dimen>
+    <dimen name="w58">@dimen/_232sdp</dimen>
+    <dimen name="w59">@dimen/_236sdp</dimen>
+    <dimen name="w60">@dimen/_240sdp</dimen>
+
+    <!--fixed margins-->
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+
+    <dimen name="badge_notification_badge">-14dp</dimen>
+
+
+</resources>
